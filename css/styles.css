@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.headContainer {
+    min-width: 100%;
+    min-height: 450px;
+    text-align: center;
+}
+
+.contentWidth {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.headContainerBg {
+    position: absolute;
+    min-width: 100%;
+    min-height: 450px;
+    background-color: #333333;
+    z-index: -2;
+}
+
+
+.headContainerImage {
+    position: absolute;
+    min-width: 100%;
+    min-height: 450px;
+    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.headContainerInfo {
+    z-index: 1;
+}
+
+.headContainerInfo h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 106px;
+}
+
+.headContainerInfo p {
+    color: #ffffff;
+    padding: 24px 0;
+}
+
+.headContainerInfo a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 22px 34px;
+    border: 1px solid #666666;
+    font-size: 18px;
+}
+
+.headContainerInfo a:hover {
+    text-decoration: none;
+    color: #000000;
+    background-color: #eaeaea;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 24px 34px;
+    border: 1px solid #666666;
+    font-size: 18px;
+}
+
+#section1 {
+    background-color: #eaeaea;
+    color: #333333;
+    width: 100%;
+    height: 224px;
+    margin: 0 auto;
+}
+
+#section1 h2 {
+    padding: 32px 0 32px;
+}
+
+#section1 p {
+    padding-bottom: 18px;
+    column-count: 2;
+}
+
+#section2 {
+    background-color: #333333;
+    color: #333333;
+    width: 100%;
+    height: 568px;
+}
+
+.container {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333;
+    width: 273px;
+    height: 500px;
+    margin-top: 34px;
+}
+
+.containerImg1 {
+    background-image: url("https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg");
+    width: 273px;
+    height: 184px;
+    background-size: cover;
+}
+
+.containerImg2 {
+    background-image: url("https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg");
+    width: 273px;
+    height: 184px;
+    background-size: cover;
+}
+
+.containerImg3 {
+    background-image: url("https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg");
+    width: 273px;
+    height: 184px;
+    background-size: cover;
+}
+
+.containerContent {
+    padding: 20px;
+}
+
+.containerContent h3 {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 21px 0;
+}
+
+.containerContent p {
+    padding: 18px 0;
+}
+
+.container:nth-child(2) {
+    margin: 0 18px;
+}
+
+#section3 {
+    background-color: #ffffff;
+    color: #333333;
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#section3 h2 {
+    padding: 60px 0 50px;
+}
+
+#section3 p {
+    padding-bottom: 18px;
+}
+
+#section4 {
+    color: #ffffff;
+    width: 100%;
+    height: 310px;
+    position: relative;
+}
+
+#section4 .leftColumn {
+    width: 50%;
+    height: 310px;
+    background-color: #2690d4;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+}
+
+#section4 .rightColumn {
+    width: 50%;
+    height: 310px;
+    background-color: #333333;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: absolute;
+    right: 0;
+}
+
+#section4 h2 {
+    padding: 60px 0 50px;
+}
+
+#section4 p {
+    padding-bottom: 18px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    height: 97px;
+    font-size: 18px;
+    line-height: 100%;
+    position: relative;
+}
+
+.footerLeft {
+    width: 50%;
+    height: 97px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    padding-top: 40px;
+}
+
+.footerRight {
+    width: 50%;
+    height: 97px;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    padding-top: 40px;
+}
+
+.footerRight a {
+    text-decoration: none;
+    color: #2690d4;
+}
