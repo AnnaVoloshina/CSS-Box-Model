@@ -1,14 +1,21 @@
-body {
+:root {
+    --main-color: #333333;
+    --second-main-color: #ffffff;
+    --contact-us-bg-color: #2690d4;
+    --section-one-bg-color: #eaeaea;
+}
+
+html {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 17.6px;
 }
 
 
 .headContainer {
     min-width: 100%;
     min-height: 450px;
-    text-align: center;
-    background-color: #333333;
+    background-color: var(--main-color);
     position: relative;
 }
 
@@ -17,13 +24,24 @@ body {
     margin: 0 auto;
 }
 
-h2 {
-    font-size: 26px;
+h1, h2, h3 {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
 p {
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 150%;
 }
 
@@ -42,42 +60,40 @@ p {
 }
 
 .headContainerInfo h1 {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 36px;
+    color: var(--second-main-color);
     padding-top: 106px;
 }
 
 .headContainerInfo p {
-    color: #ffffff;
+    color: var(--second-main-color);
     padding: 24px 0;
 }
 
 .headContainerInfo a {
     text-decoration: none;
-    color: #ffffff;
-    background-color: #333333;
+    color: var(--second-main-color);
+    background-color: var(--main-color);
     display: inline-block;
     box-sizing: border-box;
     padding: 22px 34px;
     border: 1px solid #666666;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .headContainerInfo a:hover {
     text-decoration: none;
     color: #000000;
-    background-color: #eaeaea;
+    background-color: var(--section-one-bg-color);
     display: inline-block;
     box-sizing: border-box;
     padding: 24px 34px;
     border: 1px solid #666666;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .section1 {
-    background-color: #eaeaea;
-    color: #333333;
+    background-color: var(--section-one-bg-color);
+    color: var(--main-color);
     width: 100%;
     height: 224px;
     margin: 0 auto;
@@ -93,37 +109,25 @@ p {
 }
 
 .section2 {
-    background-color: #333333;
-    color: #333333;
+    background-color: var(--main-color);
+    color: var(--main-color);
     width: 100%;
     height: 568px;
 }
 
 .container {
     display: inline-block;
-    background-color: #ffffff;
-    color: #333333;
+    background-color: var(--second-main-color);
+    color: var(--main-color);
     width: 273px;
     height: 500px;
     margin-top: 34px;
 }
 
-.containerImg1 {
+.containerImg {
     width: 273px;
     height: 184px;
-    background-size: cover;
-}
-
-.containerImg2 {
-    width: 273px;
-    height: 184px;
-    background-size: cover;
-}
-
-.containerImg3 {
-    width: 273px;
-    height: 184px;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .containerContent {
@@ -131,8 +135,7 @@ p {
 }
 
 .containerContent h3 {
-    font-size: 21px;
-    font-weight: bold;
+    font-size: 1rem;
     padding: 21px 0;
 }
 
@@ -145,8 +148,8 @@ p {
 }
 
 .section3 {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: var(--second-main-color);
+    color: var(--main-color);
     width: 100%;
     height: 250px;
 }
@@ -160,7 +163,7 @@ p {
 }
 
 .section4 {
-    color: #ffffff;
+    color: var(--second-main-color);
     width: 100%;
     height: 310px;
     position: relative;
@@ -169,7 +172,7 @@ p {
 .section4 .leftColumn {
     width: 50%;
     height: 310px;
-    background-color: #2690d4;
+    background-color: var(--contact-us-bg-color);
     display: inline-block;
     box-sizing: border-box;
     padding: 0 20px;
@@ -180,7 +183,7 @@ p {
 .section4 .rightColumn {
     width: 50%;
     height: 310px;
-    background-color: #333333;
+    background-color: var(--main-color);
     display: inline-block;
     box-sizing: border-box;
     padding: 0 20px;
@@ -196,12 +199,17 @@ p {
     padding-bottom: 18px;
 }
 
+.section4 a {
+    text-decoration: none;
+    color: var(--second-main-color);
+}
+
 footer {
     background-color: #000000;
-    color: #ffffff;
+    color: var(--second-main-color);
     width: 100%;
     height: 97px;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 100%;
     position: relative;
 }
@@ -228,5 +236,5 @@ footer {
 
 .footerRight a {
     text-decoration: none;
-    color: #2690d4;
+    color: var(--contact-us-bg-color);
 }
