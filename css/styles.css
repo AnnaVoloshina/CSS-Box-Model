@@ -8,6 +8,8 @@ body {
     min-width: 100%;
     min-height: 450px;
     text-align: center;
+    background-color: #333333;
+    position: relative;
 }
 
 .contentWidth {
@@ -25,26 +27,17 @@ p {
     line-height: 150%;
 }
 
-.headContainerBg {
-    position: absolute;
-    min-width: 100%;
-    min-height: 450px;
-    background-color: #333333;
-    z-index: -2;
-}
-
-
 .headContainerImage {
     position: absolute;
     min-width: 100%;
     min-height: 450px;
-    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-image: url("../images/head-image.jpg");
     background-size: cover;
     opacity: 0.4;
-    z-index: -1;
 }
 
 .headContainerInfo {
+    position: relative;
     z-index: 1;
 }
 
@@ -159,7 +152,7 @@ p {
     color: #333333;
     width: 100%;
     height: 250px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 #section3 h2 {
