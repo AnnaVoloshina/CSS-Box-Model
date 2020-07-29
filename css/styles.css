@@ -31,7 +31,7 @@ p {
     position: absolute;
     min-width: 100%;
     min-height: 450px;
-    background-image: url("../images/head-image.jpg");
+    background-image: url("../images/head-image.png");
     background-size: cover;
     opacity: 0.4;
 }
@@ -75,7 +75,7 @@ p {
     font-size: 18px;
 }
 
-#section1 {
+.section1 {
     background-color: #eaeaea;
     color: #333333;
     width: 100%;
@@ -83,16 +83,16 @@ p {
     margin: 0 auto;
 }
 
-#section1 h2 {
+.section1 h2 {
     padding: 32px 0 32px;
 }
 
-#section1 p {
+.section1 p {
     padding-bottom: 18px;
     column-count: 2;
 }
 
-#section2 {
+.section2 {
     background-color: #333333;
     color: #333333;
     width: 100%;
@@ -109,21 +109,18 @@ p {
 }
 
 .containerImg1 {
-    background-image: url("https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg");
     width: 273px;
     height: 184px;
     background-size: cover;
 }
 
 .containerImg2 {
-    background-image: url("https://static.pexels.com/photos/261628/pexels-photo-261628.jpeg");
     width: 273px;
     height: 184px;
     background-size: cover;
 }
 
 .containerImg3 {
-    background-image: url("https://static.pexels.com/photos/265087/pexels-photo-265087.jpeg");
     width: 273px;
     height: 184px;
     background-size: cover;
@@ -147,30 +144,29 @@ p {
     margin: 0 18px;
 }
 
-#section3 {
+.section3 {
     background-color: #ffffff;
     color: #333333;
     width: 100%;
     height: 250px;
-    /*margin: 0 auto;*/
 }
 
-#section3 h2 {
+.section3 h2 {
     padding: 60px 0 50px;
 }
 
-#section3 p {
+.section3 p {
     padding-bottom: 18px;
 }
 
-#section4 {
+.section4 {
     color: #ffffff;
     width: 100%;
     height: 310px;
     position: relative;
 }
 
-#section4 .leftColumn {
+.section4 .leftColumn {
     width: 50%;
     height: 310px;
     background-color: #2690d4;
@@ -181,7 +177,7 @@ p {
     left: 0;
 }
 
-#section4 .rightColumn {
+.section4 .rightColumn {
     width: 50%;
     height: 310px;
     background-color: #333333;
@@ -192,11 +188,11 @@ p {
     right: 0;
 }
 
-#section4 h2 {
+.section4 h2 {
     padding: 60px 0 50px;
 }
 
-#section4 p {
+.section4 p {
     padding-bottom: 18px;
 }
 
