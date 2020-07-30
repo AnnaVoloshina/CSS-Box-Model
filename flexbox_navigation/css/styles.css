@@ -1,0 +1,118 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17.6px;
+}
+
+nav {
+    background-color: #333333;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo {
+    font-family: 'Baloo 2', cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.page {
+    padding: 15px 20px;
+}
+
+.contact input[type="button"] {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.contact input[type="button"]:hover {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav {
+        padding: 30px 40px;
+    }
+    .page {
+        padding: 0 10px;
+    }
+    .logo {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    nav {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 20px 30px;
+    }
+    .logo {
+        box-sizing: border-box;
+        font-size: 35px;
+        width: 100vw;
+    }
+    .page {
+        padding: 20px 30px 0 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 30px;
+    }
+    .page {
+        padding: 20px 40px 20px 0;
+        font-size: 15px;
+    }
+    .logo {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    .page {
+        padding: 15px 20px 15px 0;
+        font-size: 14px;
+    }
+    .contact input[type="button"] {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .logo {
+        font-size: 35px;
+    }
+}
