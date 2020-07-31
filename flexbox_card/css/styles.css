@@ -1,0 +1,12 @@
+:root {
+    --main-color: #333333;
+    --second-main-color: #ffffff;
+    --contact-us-bg-color: #2690d4;
+    --section-one-bg-color: #eaeaea;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 17.6px;
+}
