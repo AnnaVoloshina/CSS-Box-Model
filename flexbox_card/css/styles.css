@@ -86,28 +86,97 @@ html {
     z-index: 3;
 }
 
-.circle1 {
+.circle {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     background-color: var(--second-main-color);
     opacity: 0.3;
     position: absolute;
-    z-index: 1;
-    top: -20px;
-    right: -70px;
     overflow: hidden;
 }
 
+.circle1 {
+    z-index: 1;
+    top: -20px;
+    right: -70px;
+}
+
 .circle2 {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: var(--second-main-color);
-    opacity: 0.3;
-    position: absolute;
     z-index: 2;
     bottom: -60px;
     right: -30px;
-    overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .cardsContainer {
+        min-width: 740px;
+    }
+
+    .card {
+        padding: 20px 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .cardsContainerBg {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .cardsContainer {
+        min-width: 60%;
+        flex-direction: column;
+    }
+
+    .card {
+        box-sizing: border-box;
+        padding: 20px 40px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+    .cardsContainerBg {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .cardsContainer {
+        min-width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        box-sizing: border-box;
+        padding: 20px 40px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+
+    .cardsContainerBg {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .cardsContainer {
+        min-width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        box-sizing: border-box;
+        padding: 20px 40px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
 }
