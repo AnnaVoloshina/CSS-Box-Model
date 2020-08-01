@@ -59,21 +59,26 @@ form > p {
 }
 
 .fields {
-    width: 80%;
+    flex-grow: 1;
     display: flex;
     justify-content: space-between;
 }
 
 .fields input, select, textarea {
     box-sizing: border-box;
-    border: 0px;
+    border: 0;
     font-size: 0.8rem;
     padding: 10px;
     flex-grow: 1;
+    background-color: #ffffff;
 }
 
-.space {
-    width: 12px;
+.name + .name {
+    margin-left: 12px;
+}
+
+.tel + .tel {
+    margin-left: 12px;
 }
 
 .alignTop {
@@ -103,55 +108,35 @@ form > p {
     margin-top: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
 
-    .contactForm {
-        padding: 40px 40px;
-    }
+@media screen and (max-width: 992px) {
 
-    .shadowBg {
-        min-width: 90vw;
-    }
-
-    .fields input[type='tel'] {
-        max-width: 31.5%;
-    }
 }
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 768px) {
 
     .contactForm {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 20px 20px;
     }
 
     .shadowBg {
         min-width: 90vw;
-        box-sizing: border-box;
         padding: 20px 30px;
     }
 
     form > h2 {
-        font-weight: bold;
-        font-size: 1.5rem;
         padding: 10px 0;
     }
 
     form > p {
-        font-size: 0.7rem;
         padding-bottom: 10px;
     }
 
     .infoLine {
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        font-size: 0.8rem;
-        padding: 6px 0;
     }
 
     .fieldsName {
@@ -164,127 +149,40 @@ form > p {
         flex-direction: column;
     }
 
-    .space {
-        width: 0px;
-    }
-
     .fields input {
         margin-bottom: 6px;
     }
+    .name + .name {
+        margin-left: 0;
+    }
+
+    .tel + .tel {
+        margin-left: 0;
+    }
+
 }
 
-@media (min-width: 480px) and (max-width: 575px) {
-
-    .contactForm {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 10px;
-    }
+@media (max-width: 576px) {
 
     .shadowBg {
         min-width: 95vw;
-        box-sizing: border-box;
         padding: 10px 10px;
-    }
-
-    form > h2 {
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 10px 0;
-    }
-
-    form > p {
-        font-size: 0.7rem;
-        padding-bottom: 10px;
-    }
-
-    .infoLine {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 0.8rem;
-        padding: 6px 0;
-    }
-
-    .fieldsName {
-        width: 100%;
-        padding-bottom: 6px;
-    }
-
-    .fields {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .space {
-        width: 0px;
-    }
-
-    .fields input {
-        margin-bottom: 6px;
-    }
-}
-
-@media (min-width: 320px) and (max-width: 479px) {
-
-    .contactForm {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-
-    .shadowBg {
-        min-width: 100vw;
-        box-sizing: border-box;
-        padding: 10px 10px;
-        box-shadow: none;
-    }
-
-    form > h2 {
-        font-weight: bold;
-        font-size: 1.5rem;
-        padding: 10px 0;
-    }
-
-    form > p {
-        font-size: 0.7rem;
-        padding-bottom: 10px;
-    }
-
-    .infoLine {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        font-size: 0.8rem;
-        padding: 6px 0;
-    }
-
-    .fieldsName {
-        width: 100%;
-        padding-bottom: 6px;
-    }
-
-    .fields {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .space {
-        width: 0px;
-    }
-
-    .fields input {
-        margin-bottom: 6px;
     }
 
     .horizontalLine {
-        box-sizing: border-box;
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+}
+
+
+@media (max-width: 320px) {
+
+    .contactForm {
         padding: 0;
-        border-top: 0;
-        margin-top: 0;
     }
 }
