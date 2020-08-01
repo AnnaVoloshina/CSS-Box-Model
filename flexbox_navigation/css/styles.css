@@ -33,6 +33,7 @@ a {
 }
 
 .page {
+    box-sizing: border-box;
     padding: 15px 20px;
 }
 
@@ -74,21 +75,18 @@ a {
     }
 
     .page {
-        box-sizing: border-box;
         padding: 20px 50px 20px 0;
     }
 }
 
 @media (max-width: 576px)  {
     .page {
-        box-sizing: border-box;
         padding: 10px 40px 15px 0;
     }
 }
 
 @media (max-width: 480px) {
     .page {
-        box-sizing: border-box;
         padding: 10px 15px 15px 0;
         font-size: 0.9rem;
     }
